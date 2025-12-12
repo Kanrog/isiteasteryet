@@ -8,7 +8,7 @@
     
     /* Text Sizes */
     --hashtag-font-size: 14px;
-    --countdown-font-size: 148px;
+    --countdown-font-size: 48px;
     --label-font-size: 16px;
     
     /* Spacing */
@@ -70,11 +70,7 @@ body {
 .value {
     font-size: var(--countdown-font-size);
     font-weight: bold;
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    color: var(--primary-color);
     min-width: calc(var(--countdown-font-size) * 1.5);
     text-align: center;
     line-height: 1;
@@ -115,10 +111,7 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Glowing effect */
-.value {
-    text-shadow: 0 0 10px rgba(0, 128, 128, 0.5);
-}
+/* Remove glowing effect for solid colors */
 
 .hashtag {
     opacity: 0.8;
