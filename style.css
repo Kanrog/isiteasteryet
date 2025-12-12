@@ -51,6 +51,7 @@ body {
     font-weight: 300;
     letter-spacing: 1px;
     text-transform: lowercase;
+    opacity: 0.8;
 }
 
 .countdown {
@@ -70,11 +71,19 @@ body {
 .value {
     font-size: var(--countdown-font-size);
     font-weight: bold;
-    color: var(--primary-color);
+    color: #008080 !important; /* FORCE solid teal color */
+    background: none !important;
+    background-image: none !important;
+    background-clip: unset !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: #008080 !important;
+    text-fill-color: #008080 !important;
     min-width: calc(var(--countdown-font-size) * 1.5);
     text-align: center;
     line-height: 1;
     display: inline-block;
+    transition: all 0.3s ease;
+    text-shadow: none !important;
 }
 
 .label {
@@ -104,15 +113,4 @@ body {
     .countdown {
         gap: 10px;
     }
-}
-
-/* Animation for smooth transitions */
-.value {
-    transition: all 0.3s ease;
-}
-
-/* Remove glowing effect for solid colors */
-
-.hashtag {
-    opacity: 0.8;
 }
