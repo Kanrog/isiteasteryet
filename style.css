@@ -2,13 +2,13 @@
 :root {
     /* Colors */
     --background-color: #000000;
-    --primary-color: #008080; /* Teal */
-    --secondary-color: #FFA500; /* Orange */
+    --primary-color: #ea7b31;
+    --secondary-color: #6fc0f4;
     --text-color: #ffffff;
     
     /* Text Sizes */
     --hashtag-font-size: 14px;
-    --countdown-font-size: 48px;
+    --countdown-font-size: 180px;
     --label-font-size: 16px;
     
     /* Spacing */
@@ -47,7 +47,7 @@ body {
 
 .hashtag {
     font-size: var(--hashtag-font-size);
-    color: var(--secondary-color);
+    color: #6fc0f4 !important; /* FORCED secondary color */
     font-weight: 300;
     letter-spacing: 1px;
     text-transform: lowercase;
@@ -71,13 +71,13 @@ body {
 .value {
     font-size: var(--countdown-font-size);
     font-weight: bold;
-    color: var(--primary-color) !important; /* Use primary-color for timer */
+    color: #ea7b31 !important; /* FORCED primary color */
     background: none !important;
     background-image: none !important;
     background-clip: unset !important;
     -webkit-background-clip: unset !important;
-    -webkit-text-fill-color: var(--primary-color) !important;
-    text-fill-color: var(--primary-color) !important;
+    -webkit-text-fill-color: #ea7b31 !important;
+    text-fill-color: #ea7b31 !important;
     min-width: calc(var(--countdown-font-size) * 1.5);
     text-align: center;
     line-height: 1;
@@ -88,7 +88,7 @@ body {
 
 .label {
     font-size: var(--label-font-size);
-    color: var(--primary-color);
+    color: #6fc0f4 !important; /* FORCED secondary color */
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 300;
