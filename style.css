@@ -1,0 +1,125 @@
+/* Customizable Variables - Easy to change colors and sizes */
+:root {
+    /* Colors */
+    --background-color: #000000;
+    --primary-color: #008080; /* Teal */
+    --secondary-color: #FFA500; /* Orange */
+    --text-color: #ffffff;
+    
+    /* Text Sizes */
+    --hashtag-font-size: 14px;
+    --countdown-font-size: 48px;
+    --label-font-size: 16px;
+    
+    /* Spacing */
+    --time-unit-gap: 20px;
+    --value-label-gap: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.hashtag {
+    font-size: var(--hashtag-font-size);
+    color: var(--primary-color);
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+}
+
+.countdown {
+    display: flex;
+    gap: var(--time-unit-gap);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.time-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--value-label-gap);
+}
+
+.value {
+    font-size: var(--countdown-font-size);
+    font-weight: bold;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    min-width: 60px;
+    text-align: center;
+}
+
+.label {
+    font-size: var(--label-font-size);
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    :root {
+        --countdown-font-size: 32px;
+        --label-font-size: 12px;
+        --time-unit-gap: 15px;
+        --hashtag-font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --countdown-font-size: 24px;
+        --label-font-size: 10px;
+        --time-unit-gap: 10px;
+        --hashtag-font-size: 10px;
+    }
+    
+    .countdown {
+        gap: 10px;
+    }
+    
+    .value {
+        min-width: 40px;
+    }
+}
+
+/* Animation for smooth transitions */
+.value {
+    transition: all 0.3s ease;
+}
+
+/* Glowing effect */
+.value {
+    text-shadow: 0 0 10px rgba(0, 128, 128, 0.5);
+}
+
+.hashtag {
+    opacity: 0.8;
+}
