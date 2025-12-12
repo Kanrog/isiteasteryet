@@ -2,13 +2,13 @@
 :root {
     /* Colors */
     --background-color: #000000;
-    --primary-color: #008080; /* Teal */
-    --secondary-color: #FFA500; /* Orange */
+    --primary-color: #47a8cf; /* Teal */
+    --secondary-color: #e87c29; /* Orange */
     --text-color: #ffffff;
     
     /* Text Sizes */
     --hashtag-font-size: 14px;
-    --countdown-font-size: 48px;
+    --countdown-font-size: 142px;
     --label-font-size: 16px;
     
     /* Spacing */
