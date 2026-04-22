@@ -1,17 +1,12 @@
-/* Customizable Variables - Easy to change colors and sizes */
+/* Customizable Variables */
 :root {
-    /* Colors */
     --background-color: #000000;
     --primary-color: #ea7b31;
     --secondary-color: #6fc0f4;
     --text-color: #ffffff;
-    
-    /* Text Sizes */
     --hashtag-font-size: 14px;
     --countdown-font-size: 180px;
     --label-font-size: 16px;
-    
-    /* Spacing */
     --time-unit-gap: 20px;
     --value-label-gap: 8px;
 }
@@ -45,9 +40,32 @@ body {
     width: 100%;
 }
 
+.nav-menu {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.nav-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
 .hashtag {
     font-size: var(--hashtag-font-size);
-    color: #6fc0f4 !important; /* FORCED secondary color */
+    color: #6fc0f4 !important;
     font-weight: 300;
     letter-spacing: 1px;
     text-transform: lowercase;
@@ -71,30 +89,22 @@ body {
 .value {
     font-size: var(--countdown-font-size);
     font-weight: bold;
-    color: #ea7b31 !important; /* FORCED primary color */
-    background: none !important;
-    background-image: none !important;
-    background-clip: unset !important;
-    -webkit-background-clip: unset !important;
-    -webkit-text-fill-color: #ea7b31 !important;
-    text-fill-color: #ea7b31 !important;
+    color: #ea7b31 !important;
     min-width: calc(var(--countdown-font-size) * 1.5);
     text-align: center;
     line-height: 1;
     display: inline-block;
     transition: all 0.3s ease;
-    text-shadow: none !important;
 }
 
 .label {
     font-size: var(--label-font-size);
-    color: #6fc0f4 !important; /* FORCED secondary color */
+    color: #6fc0f4 !important;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 300;
 }
 
-/* Responsive Design - Made less restrictive */
 @media (max-width: 768px) {
     :root {
         --label-font-size: 12px;
@@ -109,8 +119,5 @@ body {
         --time-unit-gap: 10px;
         --hashtag-font-size: 10px;
     }
-    
-    .countdown {
-        gap: 10px;
-    }
+    .countdown { gap: 10px; }
 }
