@@ -64,7 +64,5 @@ function updateCountdown() {
     previousValues = currentValues;
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-});
+updateCountdown();
+setInterval(updateCountdown, 1000);
