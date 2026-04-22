@@ -121,3 +121,45 @@ body {
     }
     .countdown { gap: 10px; }
 }
+/* Explanation Box for Banana Mode */
+.explanation-box {
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 225, 53, 0.3);
+    text-align: left;
+    margin-top: 20px;
+}
+
+.explanation-box h3 {
+    color: #ffe135;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.explanation-box p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+.explanation-box ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.explanation-box li {
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+}
+
+.explanation-box li strong {
+    color: #ffe135;
+}
