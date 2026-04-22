@@ -58,7 +58,7 @@ function padNumber(num) {
 // Enhanced countdown update with proper formatting
 function updateCountdownFormatted() {
     // Set the target date and time in Oslo timezone
-    const targetDate = new Date('2026-03-30T18:00:00+01:00'); // Oslo is CET (UTC+1) in March
+    const targetDate = new Date('2027-03-24T09:00:00+01:00'); // Oslo is CET (UTC+1) in March
     
     // Get current time
     const now = new Date();
@@ -104,15 +104,6 @@ function updateCountdownFormatted() {
     document.getElementById('minutes').textContent = padNumber(minutes);
     document.getElementById('seconds').textContent = padNumber(seconds);
 }
-
-// Initialize the countdown
-document.addEventListener('DOMContentLoaded', function() {
-    // Update immediately
-    updateCountdownFormatted();
-    
-    // Update every second
-    setInterval(updateCountdownFormatted, 1000);
-});
 
 // Add some visual feedback when numbers change
 let previousValues = {
